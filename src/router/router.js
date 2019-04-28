@@ -4,13 +4,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import Main from '@/components/Main.vue'
+import main from '@/components/main.vue'
 
 let router = new Router({
   routes:[
     {
       path:'/',
-      component:Main
+      component:main
     }
   ]
 })

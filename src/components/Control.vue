@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import playerIcon from '@/assets/images/player.png'
 export default {
   name:'control',
   props:[],
