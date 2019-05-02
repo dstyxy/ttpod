@@ -11,7 +11,7 @@
         <span class="id">{{index}}</span>
         <span class="name">歌曲asdsdasd</span>
         <span class="author">歌as手</span>
-        <span class="control">...</span>
+        <span class="control" @click="showDetails()">...</span>
       </div>
     </div>
   </div>
@@ -29,6 +29,20 @@ export default {
           src:''
         }
       ]
+    }
+  },
+  methods:{
+    showDetails() {
+      let info = {
+        show:true,
+        info:{
+          name:'aksdjas',
+          author:';askjdlkas',
+          album:'aisdiasd',
+          link:'kajsjsjsjsj'
+        }
+      }
+      this.$store.commit('setMusicDetails', info)
     }
   }
 }

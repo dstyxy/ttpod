@@ -3,6 +3,7 @@
     <nav-top></nav-top>
     <music-list></music-list>
     <control></control>
+    <music-details></music-details>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import navTop from '@/components/navTop.vue'
 import control from '@/components/control.vue'
 import musicList from '@/components/musicList.vue'
+import musicDetails from '@/components/musicDetails.vue'
 
 export default {
   name: 'Main',
@@ -17,7 +19,8 @@ export default {
   components:{
     navTop,
     control,
-    musicList
+    musicList,
+    musicDetails
   }
 }
 </script>
