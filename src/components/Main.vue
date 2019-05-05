@@ -4,6 +4,7 @@
     <music-list></music-list>
     <control></control>
     <music-details></music-details>
+    <search v-if="searchShow"></search>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import navTop from '@/components/navTop.vue'
 import control from '@/components/control.vue'
 import musicList from '@/components/musicList.vue'
 import musicDetails from '@/components/musicDetails.vue'
+import search from '@/components/search.vue'
 
 export default {
   name: 'Main',
@@ -20,7 +22,13 @@ export default {
     navTop,
     control,
     musicList,
-    musicDetails
+    musicDetails,
+    search
+  },
+  computed:{
+    searchShow() {
+      return this.$store.state.search
+    }
   }
 }
 </script>

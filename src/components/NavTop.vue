@@ -1,6 +1,9 @@
 <template>
   <div class="nav">
-    <div class="nav-item" v-for="item of navList" :key="item.name">{{item.name}}</div>
+    <div class="nav-item">播放器</div>
+    <div class="nav-item">播放列表</div>
+    <div class="nav-item">歌单</div>
+    <div class="nav-item" @click="search()">搜索</div>
   </div>
 </template>
 
@@ -24,6 +27,11 @@ export default {
           name:'搜索'
         }
       ]
+    }
+  },
+  methods:{
+    search() {
+      this.$store.commit('setSearch',true)
     }
   }
 }

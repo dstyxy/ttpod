@@ -11,11 +11,15 @@ let store = new Vuex.Store({
     musicDetails:{
       info:null,
       show:false
-    }
+    },
+    search:false
   },
   mutations:{
     setMusicDetails(state,v) {
       state.musicDetails = v
+    },
+    setSearch(state,v) {
+      state.search = v
     }
   }
 })
